@@ -1,0 +1,433 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap");
+:root {
+  --primary-color: #007af3;
+}
+
+body {
+  background: #f2f2f2;
+  margin: 0;
+  font-family: "poppins";
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  color: #444444;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding: 5em 2em;
+}
+
+.navbar {
+  background: white;
+  padding: 1em;
+}
+
+.navbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+}
+
+.navbar .container .logo {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  font-size: 1.2em;
+}
+
+.navbar .container .logo span {
+  color: var(--primary-color);
+}
+
+.navbar .container .mobile-menu {
+  cursor: pointer;
+}
+
+nav {
+  padding: 1em;
+  background: #20272e;
+  position: fixed;
+  width: 60%;
+  height: 100vh;
+  right: 0;
+  top: 0;
+  z-index: 999;
+  display: none;
+}
+
+nav .mobile-menu-exit {
+  display: block;
+  margin-bottom: 3em;
+  cursor: pointer;
+  float: right;
+}
+
+nav .mobile-menu-exit:hover {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+nav .primary-nav,
+nav .secondary-nav {
+  clear: right;
+}
+
+nav .primary-nav li,
+nav .secondary-nav li {
+  margin-bottom: 2em;
+}
+
+nav .primary-nav li a,
+nav .secondary-nav li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-size: 1.3em;
+  text-align: right;
+}
+
+nav .primary-nav li a:hover,
+nav .secondary-nav li a:hover {
+  font-weight: bold;
+}
+
+.hero-section .container {
+  text-align: center;
+}
+
+.hero-section .container .hero-left-col .subhead {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: gray;
+  letter-spacing: 0.3em;
+}
+
+.hero-section .container .hero-left-col h1 {
+  font-size: 2.5em;
+  line-height: 1.3em;
+  margin-top: 0.2em;
+}
+
+.hero-section .container .hero-left-col .hero-cta .primary-cta {
+  background: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  padding: 0.6em 1.3em;
+  font-size: 1.4em;
+  border-radius: 4em;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.hero-section .container .hero-left-col .hero-cta .watch-video-cta {
+  display: block;
+  margin-top: 1em;
+  color: gray;
+}
+
+.hero-section .container .hero-left-col .hero-cta .watch-video-cta img {
+  margin-right: 0.5em;
+}
+
+.hero-section .container .hero-img {
+  width: 60%;
+  margin-top: 3em;
+}
+
+.features-section {
+  background: #20272e;
+  color: white;
+}
+
+.features-section .container ul {
+  padding-left: 0.1em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(19rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+}
+
+.features-section .container ul li {
+  font-size: 1.1em;
+  margin-bottom: 1em;
+  margin-left: 2em;
+  position: relative;
+}
+
+.features-section .container ul li:before {
+  content: "";
+  position: absolute;
+  left: -2em;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/bullet.svg");
+  background-size: contain;
+  margin-right: 0.5em;
+}
+
+.features-section .container img {
+  display: none;
+}
+
+.testimonial-section {
+  background: var(--primary-color);
+  color: white;
+}
+
+.testimonial-section .container ul li {
+  background: #006bd6;
+  text-align: center;
+  padding: 2em 1em;
+  margin: 0 auto 5em auto;
+  width: 80%;
+  border-radius: 1em;
+}
+
+.testimonial-section .container ul li img {
+  width: 5em;
+  height: 5em;
+  border: 5px solid #006bd6;
+  border-radius: 50%;
+  margin-top: -4.5em;
+}
+
+.contact-section .container .contact-left h2 {
+  font-size: 2em;
+}
+
+.contact-section .container .contact-left form label {
+  display: block;
+  font-size: 1.2em;
+  margin-bottom: 0.2em;
+}
+
+.contact-section .container .contact-left form input,
+.contact-section .container .contact-left form textarea {
+  width: 100%;
+  padding: 0.5em;
+  margin-bottom: 1em;
+  border: 1px solid gray;
+  border-radius: 0.2em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.contact-section .container .contact-left form .send-message-cta {
+  margin-bottom: 5em;
+  font-weight: bold;
+  font-size: 1.3em;
+  color: white;
+  background: var(--primary-color);
+  border-radius: 4em;
+  padding: 0.6em 1.3em;
+  width: unset;
+  cursor: pointer;
+  border: none;
+}
+
+.contact-section .container .contact-right iframe {
+  width: 100%;
+  height: 300px;
+}
+
+.menu-btn {
+  display: block;
+}
+
+@media only screen and (min-width: 768px) {
+  .navbar .container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    place-content: unset;
+    margin: auto;
+  }
+  .navbar .container .logo {
+    width: 160px;
+    margin-right: 1.5em;
+  }
+  .navbar .container .mobile-menu {
+    display: none;
+  }
+  nav {
+    padding: 0;
+    background: white;
+    position: unset;
+    width: 100%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  nav .mobile-menu-exit {
+    display: none;
+  }
+  nav .primary-nav,
+  nav .secondary-nav {
+    clear: unset;
+  }
+  nav .primary-nav li,
+  nav .secondary-nav li {
+    display: inline-block;
+    padding: 0 0.5em;
+    margin: 0;
+  }
+  nav .primary-nav li a,
+  nav .secondary-nav li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1em;
+    text-align: unset;
+    display: inline-block;
+  }
+  nav .primary-nav {
+    margin: 0;
+  }
+  nav .primary-nav .current a {
+    font-weight: bolder;
+  }
+  nav .secondary-nav {
+    margin: 0;
+    margin-left: auto;
+  }
+  nav .secondary-nav .go-premium-cta a {
+    border: solid 0.1em var(--primary-color);
+    border-radius: 5em;
+    padding: 0.15em 0.8em;
+    color: var(--primary-color);
+    font-weight: bold;
+  }
+  nav .secondary-nav .go-premium-cta a:hover {
+    background: var(--primary-color);
+    color: white;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  .container {
+    max-width: 1080px;
+    margin: 0 auto;
+  }
+  section.hero-section {
+    padding: 10em 5em;
+  }
+  section.hero-section .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: left;
+  }
+  section.hero-section .container .hero-left-col h1 {
+    font-size: 3.5em;
+    width: 90%;
+  }
+  section.hero-section .container .hero-left-col .hero-cta .watch-video-cta {
+    display: unset;
+    margin-left: 0.5em;
+  }
+  section.hero-section .container .hero-img {
+    width: 30%;
+    margin: 0;
+  }
+  section.features-section {
+    padding: 5em 15em;
+    position: relative;
+  }
+  section.features-section .container ul {
+    display: block;
+  }
+  section.features-section .container ul li {
+    margin: 1em 0;
+    font-size: 1.2em;
+  }
+  section.features-section .container img {
+    display: unset;
+    position: absolute;
+    top: 15em;
+    right: 0;
+    width: 300px;
+  }
+  section.testimonial-section {
+    padding: 8em 0 5em 0;
+  }
+  section.testimonial-section .container ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  section.testimonial-section .container ul li {
+    margin: 0 1em;
+  }
+  section.contact-section {
+    padding: 0;
+  }
+  section.contact-section .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  section.contact-section .container .contact-left {
+    padding: 1em 5em 1em 0;
+    padding-bottom: 0;
+  }
+  section.contact-section .container .contact-left form .send-message-cta {
+    margin-bottom: 2em;
+  }
+  section.contact-section .container .contact-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 50%;
+  }
+  section.contact-section .container .contact-right iframe {
+    height: 100%;
+  }
+}
+
+@media only screen and (min-width: 1090px) {
+  section.features-section:before {
+    content: "";
+    position: absolute;
+    top: -4em;
+    left: 0;
+    background: var(--primary-color);
+    height: 12em;
+    width: 10em;
+  }
+  section.features-section:after {
+    content: "";
+    position: absolute;
+    top: -4em;
+    left: 3em;
+    background: url("../images/dots.svg");
+    width: 120px;
+    height: 80px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
